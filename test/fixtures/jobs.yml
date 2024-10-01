@@ -1,0 +1,42 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+
+
+one:
+  company_id: 1          # Integer value
+  title: "Software Engineer"
+  description: "Develop and maintain software applications."
+  url: "https://example.com/jobs/1"
+  location: "New York, NY"
+  active: "true"         # Assuming 'active' is a string representation of boolean
+  salary_range: "$80,000 - $100,000"
+
+two:
+  company_id: 2          # Integer value
+  title: "Product Manager"
+  description: "Manage the development and launch of products."
+  url: "https://example.com/jobs/2"
+  location: "San Francisco, CA"
+  active: "false"        # Assuming 'active' is a string representation of boolean
+  salary_range: "$90,000 - $120,000"
+
+
+# one:
+#   company_id: MyString
+#   integer: MyString
+#   title: MyString
+#   description: MyString
+#   url: MyString
+#   location: MyString
+#   active: MyString
+#   salary_range: MyString
+
+# two:
+#   company_id: MyString
+#   integer: MyString
+#   title: MyString
+#   description: MyString
+#   url: MyString
+#   location: MyString
+#   active: MyString
+#   salary_range: MyString
