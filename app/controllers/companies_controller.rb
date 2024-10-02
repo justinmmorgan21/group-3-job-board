@@ -1,6 +1,11 @@
 class CompaniesController < ApplicationController
   def index
     @companies = Company.all
-    render json: {message: "companies index"}
+    render :index
+  end
+
+  def show
+    @company = Company.find_by(id: params[:id])
+    render :show
   end
 end
