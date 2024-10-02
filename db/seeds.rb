@@ -7,3 +7,16 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+require 'faker'
+
+50.times do
+  company = Company.new(
+    name: Faker::Company.name,
+    logo: Faker::Company.logo,
+    description: Faker::Company.catch_phrase
+  )
+  
+  company.save
+
+end
