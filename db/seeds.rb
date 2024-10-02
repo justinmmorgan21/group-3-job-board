@@ -10,13 +10,33 @@
 
 require 'faker'
 
-50.times do
-  company = Company.new(
-    name: Faker::Company.name,
-    logo: Faker::Company.logo,
-    description: Faker::Company.catch_phrase
-  )
+# 50.times do
+#   company = Company.new(
+#     name: Faker::Company.name,
+#     logo: Faker::Company.logo,
+#     description: Faker::Company.catch_phrase
+#   )
   
-  company.save
+#   company.save
 
+# end
+
+50.times do
+  company_id = rand(1..50)
+  title = Faker::Job.title
+  description = "#{Faker::Job.employment_type} #{title} in #{Faker::Job.field} requiring #{Faker::Job.key_skill}"
+  salary_low = rand(30..125)
+  salary_range = "#{salary_low}K - #{salary_low + 25}K"
+
+  job = Job.new(
+    company_id: company_id,
+    title: Faker::Job.title,
+    description: description,
+    url: Faker::Internet.url,
+    location: Faker::Address.city,
+    active: true,
+    salary_range: salary_range
+  )
+
+  job.save
 end
