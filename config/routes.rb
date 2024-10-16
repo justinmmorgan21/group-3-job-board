@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get "/companies/:id" => "companies#show"
   get "/jobs" => "jobs#index"
   
-
+  post "/users" => "users#create"
   # Defines the root path route ("/")
   # root "posts#index"
 end
