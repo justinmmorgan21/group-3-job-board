@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get "/jobs" => "jobs#index"
   
   post "/users" => "users#create"
+  post "/sessions" => "sessions#create"
   # Defines the root path route ("/")
   # root "posts#index"
 end
