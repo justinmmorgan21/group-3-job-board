@@ -68,3 +68,4 @@ end
 
 gem 'faker'
 gem 'jwt'
+gem 'rack-cors'

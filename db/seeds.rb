@@ -10,7 +10,7 @@
 
 require 'faker'
 
-# 50.times do
+# 10.times do
 #   company = Company.new(
 #     name: Faker::Company.name,
 #     logo: Faker::Company.logo,
@@ -22,7 +22,7 @@ require 'faker'
 # end
 
 50.times do
-  company_id = rand(1..50)
+  company_id = rand(1..10)
   title = Faker::Job.title
   description = "#{Faker::Job.employment_type} #{title} in #{Faker::Job.field} requiring #{Faker::Job.key_skill}"
   salary_low = rand(30..125)
