@@ -10,16 +10,16 @@
 
 require 'faker'
 
-# 10.times do
-#   company = Company.new(
-#     name: Faker::Company.name,
-#     logo: Faker::Company.logo,
-#     description: Faker::Company.catch_phrase
-#   )
+10.times do
+  company = Company.new(
+    name: Faker::Company.name,
+    logo: Faker::Company.logo,
+    description: Faker::Company.catch_phrase
+  )
   
-#   company.save
+  company.save
 
-# end
+end
 
 50.times do
   company_id = rand(1..10)
