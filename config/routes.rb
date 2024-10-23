@@ -15,7 +15,9 @@ Rails.application.routes.draw do
   # root "posts#index"
   # 
   # config/routes.rb
-  post '/run_seeds', to: 'tasks#seed'
+  scope :api do
+    post '/run_seeds', to: 'tasks#seed'
+  end
 
 
 end
