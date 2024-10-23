@@ -13,4 +13,9 @@ Rails.application.routes.draw do
   post "/sessions" => "sessions#create"
   # Defines the root path route ("/")
   # root "posts#index"
+  # 
+  # config/routes.rb
+  post '/run_seeds', to: 'tasks#seed'
+
+
 end
